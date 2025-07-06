@@ -1,11 +1,14 @@
+import { siteConfig } from "@/config/site";
 import MainNavigation from "./MainNavigation";
+import MobileNavigation from "./MobileNavigation";
 
 function Header() {
   return (
     <header className="w-full border-b">
-      <div className="container flex items-center h-16">
-        <MainNavigation />
-      </div>
+      <nav className="container mx-auto flex h-16 items-center ">
+        <MainNavigation items={siteConfig.mainNav} />
+        <MobileNavigation items={siteConfig.mainNav} />
+      </nav>
     </header>
   );
 }
