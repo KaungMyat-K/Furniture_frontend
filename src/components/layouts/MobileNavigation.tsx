@@ -63,7 +63,7 @@ function MobileNavigation({ items }: MainNavigationProps) {
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
-            <div className="flex flex-col space-y-2 mt-4">
+            <div className="flex flex-col space-y-2 ">
               {items?.[0]?.menu?.map((item) => (
                 <SheetClose asChild key={item.title}>
                   <Link
