@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
 import { Icons } from "../icons";
 import { siteConfig } from "@/config/site";
+import { NewsLetterForm } from "../news-letter";
 
 function Footer() {
   return (
-    <footer className="w-full border-t ml-4 lg:ml-0">
-      <div className="container mx-auto pb-8 pt-6 lg:py-6 ">
+    <footer className="ml-4 w-full border-t lg:ml-0">
+      <div className="mx-auto container pb-8 pt-6 lg:py-6 ">
         <section className="flex flex-col lg:flex-row gap-10 lg:gap-20">
           <section className="">
             <Link to="/" className="flex items-center space-x-2">
@@ -34,6 +35,10 @@ function Footer() {
                 </ul>
               </div>
             ))}
+          </section>
+          <section className="space-y-3">
+            <h4 className="font-medium">Subscribe to our newsletter</h4>
+            <NewsLetterForm />
           </section>
         </section>
       </div>
